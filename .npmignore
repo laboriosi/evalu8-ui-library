@@ -1,0 +1,13 @@
+.github
+.husky
+.storybook
+
+
+src/*
+
+commitlint.config.js
+tsconfig.json
+tsconfig.paths.json
+rollup.config.js
+.prettierrc
+.eslintrc

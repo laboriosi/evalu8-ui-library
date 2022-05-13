@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+git config advice.ignoredHook false
+chmod -x .husky/post-commit
+yarn release 
+chmod +x .husky/post-commit
