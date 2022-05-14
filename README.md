@@ -7,24 +7,20 @@ library</h1>
 
 ```
 npm install
-
 ```
 
 ```
 npm run storybook
-
 ```
 
 #### yarn
 
 ```
 yarn install
-
 ```
 
 ```
 yarn storybook
-
 ```
 
 ## How to install
