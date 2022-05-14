@@ -1,22 +1,11 @@
-name: Evalu8 Ui Library
+name: Evalu8 UI Library
 
 on:
   release:
     types: [created]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 12
-      - run: yarn install --immutable --immutable-cache --check-cache
-      - run: yarn test
-
-  publish-gpr:
-    needs: build
+  build-and-publish:
     runs-on: ubuntu-latest
     permissions:
       packages: write
@@ -27,7 +16,14 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-      - run: yarn install --immutable --immutable-cache --check-cache
-      - run: yarn publish
+      - name: Build
+        run: |
+          echo "@laboriosi:registry=https://npm.pkg.github.com" > .npmrc
+          echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" >> .npmrc
+          npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.PERSONAL_ACCESS_TOKEN}}
+      - name: Publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.PERSONAL_ACCESS_TOKEN}}

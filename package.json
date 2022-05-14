@@ -98,5 +98,9 @@
   },
   "files": [
     "build"
-  ]
+  ],
+  "optionalDependencies": {
+    "esbuild": "^0.14.39",
+    "fsevents": "^2.3.2"
+  }
 }
