@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/laboriosi/evalu8-ui-library/compare/v1.3.3...v1.4.0) (2022-05-15)
+
+
+### Features
+
+* code input component ([9ee6167](https://github.com/laboriosi/evalu8-ui-library/commit/9ee6167e176895a1c22f8b6982a80df017973392))
+
 ### [1.3.3](https://github.com/laboriosi/evalu8-ui-library/compare/v1.3.2...v1.3.3) (2022-05-15)
 
 ### [1.3.2](https://github.com/laboriosi/evalu8-ui-library/compare/v1.3.1...v1.3.2) (2022-05-15)
