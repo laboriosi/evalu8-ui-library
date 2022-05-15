@@ -4,17 +4,17 @@ import { Props } from './types'
 import InputMask from 'react-input-mask'
 import { InputHTMLAttributes } from 'react'
 
-function Input({ mask, error, ...rest }: Props) {
+function Input({ mask, error, innerRef, ...rest }: Props) {
   if (mask)
     return (
       <InputMask mask={mask} maskChar={null} {...rest}>
         {(inputProps: InputHTMLAttributes<HTMLInputElement>) => (
-          <Styled.Input {...inputProps} $error={error} />
+          <Styled.Input $error={error} {...inputProps} />
         )}
       </InputMask>
     )
 
-  return <Styled.Input $error={error} {...rest} />
+  return <Styled.Input $error={error} ref={innerRef} {...rest} />
 }
 
 export default withTheme(Input)
