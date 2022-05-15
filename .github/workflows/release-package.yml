@@ -5,7 +5,24 @@ on:
     types: [created]
 
 jobs:
-  build-and-publish:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 12
+      - name: Install
+        run: |
+          echo "@laboriosi:registry=https://npm.pkg.github.com" > .npmrc
+          echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" >> .npmrc
+          npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.PERSONAL_ACCESS_TOKEN}}
+      - name: Build
+        run: npm run build
+  publish:
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       packages: write
@@ -16,7 +33,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-      - name: Build
+      - name: Install
         run: |
           echo "@laboriosi:registry=https://npm.pkg.github.com" > .npmrc
           echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" >> .npmrc
