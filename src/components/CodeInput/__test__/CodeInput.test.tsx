@@ -4,11 +4,13 @@ import { render, screen } from '~utils/tests'
 
 describe('CodeInput', () => {
   it('should be able to type', async () => {
+    const user = userEvent.setup()
+
     render(<CodeInput />)
 
-    const user = userEvent.setup()
     const [firstInput, secondInput, thirdInput, fourthInput] =
       screen.getAllByRole('spinbutton')
+
     await user.type(firstInput, '1234')
 
     expect(firstInput).toHaveValue(1)
@@ -18,11 +20,13 @@ describe('CodeInput', () => {
   })
 
   it('should be able to paste', async () => {
+    const user = userEvent.setup()
+
     render(<CodeInput />)
 
-    const user = userEvent.setup()
     const [firstInput, secondInput, thirdInput, fourthInput] =
       screen.getAllByRole('spinbutton')
+
     await user.click(firstInput)
     await user.paste('1234')
 
@@ -33,20 +37,24 @@ describe('CodeInput', () => {
   })
 
   it('should be able to basckpace when input is filled', async () => {
+    const user = userEvent.setup()
+
     render(<CodeInput />)
 
-    const user = userEvent.setup()
     const [firstInput, , , fourthInput] = screen.getAllByRole('spinbutton')
+
     await user.type(firstInput, '1234{backspace}')
 
     expect(fourthInput).toHaveValue(null)
   })
 
   it('should be able to basckpace when input is empty', async () => {
+    const user = userEvent.setup()
+
     render(<CodeInput />)
 
-    const user = userEvent.setup()
     const [firstInput, , thirdInput, fourthInput] = screen.getAllByRole('spinbutton')
+
     await user.type(firstInput, '123')
     await user.type(fourthInput, '{backspace}')
 

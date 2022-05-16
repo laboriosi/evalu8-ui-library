@@ -1,7 +1,6 @@
 import FooterText from '..'
 import theme from '@laboriosi/evalu8-tokens/theme.json'
-import { screen } from '@testing-library/react'
-import { render } from '~utils/tests'
+import { render, screen } from '~utils/tests'
 
 describe('FooterText', () => {
   it('should render the component with the default style', () => {
