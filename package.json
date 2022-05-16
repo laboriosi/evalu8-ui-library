@@ -1,6 +1,6 @@
 {
   "name": "@laboriosi/evalu8-ui-library",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -74,12 +74,14 @@
     "tsconfig-paths-webpack-plugin": "^3.5.2",
     "typescript": "^4.6.4",
     "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "yup": "^0.32.11"
   },
   "dependencies": {
     "@bugsnag/plugin-react": "^7.16.4",
     "@laboriosi/evalu8-fonts": "^1.2.1",
     "@laboriosi/evalu8-tokens": "^1.2.1",
+    "formik": "^2.2.9",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-input-mask": "^2.0.4",
