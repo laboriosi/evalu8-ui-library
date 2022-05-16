@@ -4,8 +4,8 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '~components/GlobalStyle'
 import '@laboriosi/evalu8-fonts/fonts.css'
 
-export default function withTheme<T>(Component: ComponentType<T>) {
-  const NewComponent = (props: T) => (
+function withTheme<P>(Component: ComponentType<P>) {
+  const NewComponent = (props: P) => (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Component {...props} />
@@ -14,3 +14,5 @@ export default function withTheme<T>(Component: ComponentType<T>) {
 
   return NewComponent
 }
+
+export default withTheme

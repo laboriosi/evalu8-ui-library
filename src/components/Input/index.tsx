@@ -4,7 +4,7 @@ import { Props } from './types'
 import InputMask from 'react-input-mask'
 import { InputHTMLAttributes } from 'react'
 
-function Input({ mask, error, innerRef, ...rest }: Props) {
+export function Input({ mask, error, innerRef, ...rest }: Props) {
   if (mask)
     return (
       <InputMask mask={mask} maskChar={null} {...rest}>
