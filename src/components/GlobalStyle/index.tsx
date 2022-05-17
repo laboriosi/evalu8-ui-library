@@ -1,6 +1,7 @@
+import { withTheme } from '@storybook/theming'
 import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
    * {
     margin: 0;
     padding: 0;
@@ -14,3 +15,5 @@ export default createGlobalStyle`
     height: 100%;
   }
 `
+
+export default withTheme(GlobalStyle)
