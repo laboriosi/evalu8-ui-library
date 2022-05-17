@@ -18,13 +18,18 @@ module.exports = {
       },
       {
         test: /\.tsx?$/,
-        use: ['babel-loader', 'ts-loader'],
+        use: ['ts-loader'],
         exclude: /node_modules/,
       },
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts'],
+    alias: {
+      '~components': path.resolve(__dirname, './src/components'),
+      '~hocs': path.resolve(__dirname, './src/hocs'),
+      '~utils': path.resolve(__dirname, './src/utils'),
+    },
+    extensions: ['.tsx', '.ts', '.js', '.jsx'],
     plugins: [new TsconfigPathsPlugin()],
   },
   externals: {
