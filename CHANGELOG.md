@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.1](https://github.com/laboriosi/evalu8-ui-library/compare/v1.8.0...v1.8.1) (2022-05-17)
+
+
+### Bug Fixes
+
+* field error behave ([d418d53](https://github.com/laboriosi/evalu8-ui-library/commit/d418d536d180d301112d15aea1a4935f482a9137))
+
 ## [1.8.0](https://github.com/laboriosi/evalu8-ui-library/compare/v1.7.0...v1.8.0) (2022-05-17)
 
 
