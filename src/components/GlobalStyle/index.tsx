@@ -1,5 +1,6 @@
-import { withTheme } from '@storybook/theming'
 import { createGlobalStyle } from 'styled-components'
+import theme from '@laboriosi/evalu8-tokens/theme.json'
+import { ThemeProvider } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
    * {
@@ -16,4 +17,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 `
 
-export default withTheme(GlobalStyle)
+export default function ExternalGobalStyle() {
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+    </ThemeProvider>
+  )
+}
