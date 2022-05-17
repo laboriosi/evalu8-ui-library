@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/laboriosi/evalu8-ui-library/compare/v1.5.0...v1.5.1) (2022-05-17)
+
+
+### Bug Fixes
+
+* **build:** remove unnecessary dependencies and add .js to webpack ([7747252](https://github.com/laboriosi/evalu8-ui-library/commit/774725298ba1bece8ac4884b8d3d4b79520548b8))
+
 ## [1.5.0](https://github.com/laboriosi/evalu8-ui-library/compare/v1.4.1...v1.5.0) (2022-05-16)
 
 
