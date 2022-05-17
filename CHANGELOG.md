@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/laboriosi/evalu8-ui-library/compare/v1.7.0...v1.8.0) (2022-05-17)
+
+
+### Features
+
+* update header spacing ([ba965ff](https://github.com/laboriosi/evalu8-ui-library/commit/ba965fff7fe381b487fba484611f246de2df0418))
+
 ## [1.7.0](https://github.com/laboriosi/evalu8-ui-library/compare/v1.6.5...v1.7.0) (2022-05-17)
 
 
