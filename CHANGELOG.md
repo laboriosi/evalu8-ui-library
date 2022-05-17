@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.5](https://github.com/laboriosi/evalu8-ui-library/compare/v1.6.4...v1.6.5) (2022-05-17)
+
+
+### Bug Fixes
+
+* export global style component with theme ([e263b54](https://github.com/laboriosi/evalu8-ui-library/commit/e263b5435988a4b3c1097b232d29b40c9f39db88))
+
 ### [1.6.4](https://github.com/laboriosi/evalu8-ui-library/compare/v1.6.3...v1.6.4) (2022-05-17)
 
 
