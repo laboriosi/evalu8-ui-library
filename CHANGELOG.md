@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.3](https://github.com/laboriosi/evalu8-ui-library/compare/v1.6.2...v1.6.3) (2022-05-17)
+
+
+### Bug Fixes
+
+* package.json include dist ([73a9ec4](https://github.com/laboriosi/evalu8-ui-library/commit/73a9ec468d0a5230c18f6981c3e0652afd0e3e4e))
+
 ### [1.6.2](https://github.com/laboriosi/evalu8-ui-library/compare/v1.6.1...v1.6.2) (2022-05-17)
 
 ### [1.6.1](https://github.com/laboriosi/evalu8-ui-library/compare/v1.6.0...v1.6.1) (2022-05-17)
