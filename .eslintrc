@@ -26,6 +26,7 @@
     "semi": ["error", "never"],
     "@typescript-eslint/no-empty-interface": "off",
     "react/react-in-jsx-scope": "off",
+    "import/order": "error",
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]
   },
   "settings": {
