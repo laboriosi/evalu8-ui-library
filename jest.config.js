@@ -1,7 +1,7 @@
 const { pathsToModuleNameMapper } = require('ts-jest')
 const { compilerOptions } = require('./tsconfig.json')
 
-const IGNORED_FILES = ['<rootDir>/src/components/GlobalStyle/index.tsx']
+const IGNORED_FILES = ['<rootDir>/src/components/GlobalStyle/index.tsx', 'dist']
 const SETUP_FILE = '<rootDir>/src/config/setupTests.ts'
 
 module.exports = {

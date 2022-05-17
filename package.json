@@ -3,6 +3,7 @@
   "version": "1.6.1",
   "description": "",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -73,6 +74,7 @@
   "dependencies": {
     "@bugsnag/js": "^7.16.2",
     "@bugsnag/plugin-react": "^7.16.4",
+    "@jmurp7385/declaration-bundler-webpack-plugin": "^1.0.1",
     "@laboriosi/evalu8-fonts": "^1.2.1",
     "@laboriosi/evalu8-tokens": "^1.2.1",
     "formik": "^2.2.6",
