@@ -4,6 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -95,9 +98,6 @@
       "last 1 safari version"
     ]
   },
-  "files": [
-    "build"
-  ],
   "optionalDependencies": {
     "esbuild": "^0.14.39",
     "fsevents": "^2.3.2"

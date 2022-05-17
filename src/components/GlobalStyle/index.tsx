@@ -9,4 +9,8 @@ export default createGlobalStyle`
     font-size: ${({ theme }) => theme.font.size.base};
     box-sizing: border-box;
    }
+
+   body, html, #root  {
+    height: 100%;
+  }
 `
