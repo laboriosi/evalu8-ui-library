@@ -1,9 +1,9 @@
 import { useField } from 'formik'
+import { ChangeEvent, ComponentType } from 'react'
+import { Props } from './types'
 import Label from '~components/Label'
 import ErrorText from '~components/ErrorText'
 import RelativeColumn from '~components/RelativeColumn'
-import { ChangeEvent, ComponentType } from 'react'
-import { Props } from './types'
 
 function withField<P extends Props>(Component: ComponentType<P>) {
   const NewComponent = (props: P) => {
@@ -21,7 +21,7 @@ function withField<P extends Props>(Component: ComponentType<P>) {
           {props.label}
         </Label>
         <RelativeColumn>
-          <Component {...props} {...field} onChange={handleChange} error={error} />
+          <Component {...props} {...field} onChange={handleChange} error={showError} />
         </RelativeColumn>
         {showError && <ErrorText>{error}</ErrorText>}
       </>
