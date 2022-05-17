@@ -22,8 +22,8 @@ function withField<P extends Props>(Component: ComponentType<P>) {
         </Label>
         <RelativeColumn>
           <Component {...props} {...field} onChange={handleChange} error={showError} />
+          {showError && <ErrorText>{error}</ErrorText>}
         </RelativeColumn>
-        {showError && <ErrorText>{error}</ErrorText>}
       </>
     )
   }
