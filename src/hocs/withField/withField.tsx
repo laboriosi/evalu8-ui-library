@@ -5,8 +5,8 @@ import Label from '~components/Label'
 import ErrorText from '~components/ErrorText'
 import RelativeColumn from '~components/RelativeColumn'
 
-function withField<P extends Props>(Component: ComponentType<P>) {
-  const NewComponent = (props: P) => {
+function withField<P>(Component: ComponentType<P>) {
+  const NewComponent = (props: P & Props) => {
     const [field, { touched, error }] = useField(props)
     const showError = touched && error
 

@@ -1,7 +1,7 @@
 import { ChangeEventHandler } from 'react'
 
 export interface Props {
-  label: string
+  label?: string
   name: string
   onChange?: ChangeEventHandler
 }

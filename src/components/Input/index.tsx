@@ -1,8 +1,8 @@
-import withTheme from '~hocs/withTheme'
-import * as Styled from './styled'
-import { Props } from './types'
 import InputMask from 'react-input-mask'
 import { InputHTMLAttributes } from 'react'
+import * as Styled from './styled'
+import { Props } from './types'
+import withTheme from '~hocs/withTheme'
 
 export function Input({ mask, error, innerRef, ...rest }: Props) {
   if (mask)
