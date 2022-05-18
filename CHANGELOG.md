@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.4](https://github.com/laboriosi/evalu8-ui-library/compare/v1.8.3...v1.8.4) (2022-05-18)
+
+
+### Bug Fixes
+
+* **types:** add input props to withField ([19ad9d7](https://github.com/laboriosi/evalu8-ui-library/commit/19ad9d77750532ace962aa36c4f3015b204e76e2))
+
 ### [1.8.3](https://github.com/laboriosi/evalu8-ui-library/compare/v1.8.0...v1.8.3) (2022-05-18)
 
 
