@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.8.6](https://github.com/laboriosi/evalu8-ui-library/compare/v1.8.5...v1.8.6) (2022-05-19)
+
+
+### Bug Fixes
+
+* **workaround:** handle the scenery of a input with a non group char at start ([5d91c03](https://github.com/laboriosi/evalu8-ui-library/commit/5d91c030899ca5b754202184cbe4f7233fd8b0fd))
+
 ### [1.8.5](https://github.com/laboriosi/evalu8-ui-library/compare/v1.8.4...v1.8.5) (2022-05-19)
 
 
