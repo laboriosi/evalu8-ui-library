@@ -8,7 +8,7 @@ export default {
   decorators: [
     (Story) => (
       <Form
-        initialValues={{ lorem: 'ipsum' }}
+        initialValues={{ lorem: '' }}
         onSubmit={(values) => {
           console.log(values)
         }}
@@ -25,4 +25,5 @@ export const Primary = Template.bind({})
 Primary.args = {
   name: 'lorem',
   label: 'Lorem',
+  mask: '',
 }

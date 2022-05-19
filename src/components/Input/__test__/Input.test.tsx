@@ -1,6 +1,6 @@
-import Input from '..'
 import theme from '@laboriosi/evalu8-tokens/theme.json'
 import userEvent from '@testing-library/user-event'
+import Input from '..'
 import { render, screen } from '~utils/tests'
 
 describe('Input', () => {
